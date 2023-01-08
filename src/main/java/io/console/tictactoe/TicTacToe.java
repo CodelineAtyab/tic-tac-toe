@@ -21,23 +21,25 @@ public class TicTacToe {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         System.out.println("Staring Application ...");
-        HashMap<String, String> developerRecord = new HashMap<String, String>(); 
         
-        developerRecord.put("id", "M324erqwrA");
-        developerRecord.put("name", "MrA");
-        developerRecord.put("email", "mra@gmail.com");
+    }
+    
+    public int subtract(int firstNumber, int secondNumber) {
+        return firstNumber - secondNumber;
+    }
+    
+    public HashMap<String, String> getData(){
+        HashMap<String, String> retrievedData = new HashMap<String, String>();
+        String statusCode = "FAIL";
         
-        HashMap<String, String> developerRecord2 = developerRecord;
+        // TODO: Get the data from some API like world clock
+        // TODO: Assume you already have the data at this point
+        statusCode = "SUCCESS";
         
-        try (FileWriter writer = new FileWriter("data.json")) {
-            Gson gson = new GsonBuilder().create();
-            gson.toJson(developerRecord, writer);
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
+        retrievedData.put("status", statusCode);
+        retrievedData.put("data", "<html><h1>Some Data</h1></html>");
         
-        System.out.println("Look! I made a change in feture branch");
-
+        return retrievedData;
     }
 
 }
