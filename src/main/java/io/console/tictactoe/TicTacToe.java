@@ -20,6 +20,7 @@ public class TicTacToe {
      */
     public static void main(String[] args) {
         // TODO Auto-generated method stub
+        int[] playerScores = new int[2];
         System.out.println("Staring Application ...");
         
     }
