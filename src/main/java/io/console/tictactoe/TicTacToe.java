@@ -30,13 +30,13 @@ public class TicTacToe {
     
     public HashMap<String, String> getData(){
         HashMap<String, String> retrievedData = new HashMap<String, String>();
-        String statusCode = "FAIL";
+        String returnStatusCode = "FAIL";
         
         // TODO: Get the data from some API like world clock
         // TODO: Assume you already have the data at this point
-        statusCode = "SUCCESS";
+        returnStatusCode = "SUCCESS";
         
-        retrievedData.put("status", statusCode);
+        retrievedData.put("status", returnStatusCode);
         retrievedData.put("data", "<html><h1>Some Data</h1></html>");
         
         return retrievedData;
